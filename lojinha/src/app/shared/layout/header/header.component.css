@@ -1,0 +1,17 @@
+.header{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin: 1.8rem 2.3rem 0 2.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--primary-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,12 @@
+<a href="{{product.id}}">
+    <div class="stock-card-container" [class.negative-variation-border]="product.price < 0">
+        <img src="{{product.image}}" width="70%" height="auto">
+        <div class="stock-card-info">
+            <h1>{{product.name}}</h1>
+            <div class="stock-card-price">
+                <span>{{product.price | currency:'BRL'}}</span>
+                <span class="discount" [class.negative-variation-bg="product.price < 0">&#8595; 5,00%</span><!-- {{variation}} -->
+            </div>
+        </div>
+    </div>
+</a>
